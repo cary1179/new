@@ -1,2 +1,2 @@
-# newbbb
+# new
 this is a test repository
