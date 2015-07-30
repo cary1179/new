@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>故障记录</title>
+	<link rel="stylesheet" type="text/css" href="css/wash.css" />
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/com/base.js"></script>
+	<script type="text/javascript" src="js/com/select.js"></script>
+</head>
+<body class="wash">
+	<div class="header">
+		<header>
+			<span class="js_back">返回</span>
+			<span class="js_caidan"></span>
+			故障记录
+		</header>
+	</div>
+
+	<!-- 车辆详情 -->
+	<div class="od_name">
+		<img src="img/zzz-100x100.jpg" alt="" />
+		<div class="od_name_info">
+			<h3>渝BKG365<em>大型商务车</em></h3>
+			<p>上汽大通V80 白色</p>
+			<p>VIN:123353454364563536756</p>
+		</div>
+		<i class="icon icon2"></i>
+		<span class="next">下一辆<em>&gt;&gt;</em></span>
+	</div>
+
+	<!-- 故障类型 -->
+	<div class="od_type clear">
+		<div class="od_type_box" id="od_type2">
+			<i class="icon icon10"></i><span class="od_type_cont" id="od_type2_cont">刹车轮胎</span>
+			<div class="o_pop1" style="display: none;">
+				<ul>
+					<li>刹车轮胎</li>
+					<li>车窗门锁升降不灵</li>
+					<li>天窗开启关闭异常</li>
+					<li>尾窗开启关闭异常</li>
+					<li>门窗雨天漏水</li>
+					<li>钥匙遥控失灵</li>
+				</ul>
+			</div>
+			<select name="od_type2" id="">
+				<option value="1">车窗门锁升降不灵</option>
+				<option value="2">天窗开启关闭异常</option>
+				<option value="3">尾窗开启关闭异常</option>
+				<option value="4">门窗雨天漏水</option>
+				<option value="5">钥匙遥控失灵</option>
+			</select>
+		</div>
+		<div class="od_type_box" id="od_type1">
+			<i class="icon icon9"></i><span class="od_type_cont" id="od_type1_cont">引擎故障</span>
+			<div class="o_pop1" style="display: none;">
+				<ul>
+					<li>引擎故障</li>
+					<li>点火启动失败</li>
+					<li>怠速不稳抖动</li>
+					<li>行驶途中熄火</li>
+					<li>引擎故障提示</li>
+				</ul>
+			</div>
+			<select name="od_type1" id="">
+				<option value="1">点火启动失败</option>
+				<option value="2">怠速不稳抖动</option>
+				<option value="3">行驶途中熄火</option>
+				<option value="4">引擎故障提示</option>
+			</select>
+		</div>
+		<div class="od_type_box" id="od_type4">
+			<i class="icon icon12"></i><span class="od_type_cont" id="od_type4_cont">电子设备</span>
+			<div class="o_pop1" style="display: none;">
+				<ul>
+					<li>电子设备</li>
+					<li>车窗门锁升降不灵</li>
+					<li>天窗开启关闭异常</li>
+					<li>尾窗开启关闭异常</li>
+					<li>门窗雨天漏水</li>
+					<li>钥匙遥控失灵</li>
+				</ul>
+			</div>
+			<select name="od_type4" id="">
+				<option value="1">车窗门锁升降不灵</option>
+				<option value="2">天窗开启关闭异常</option>
+				<option value="3">尾窗开启关闭异常</option>
+				<option value="4">门窗雨天漏水</option>
+				<option value="5">钥匙遥控失灵</option>
+			</select>
+		</div>
+		<div class="od_type_box" id="od_type3">
+			<i class="icon icon11"></i><span class="od_type_cont" id="od_type3_cont">车窗门锁</span>
+			<div class="o_pop1" style="display: none;">
+				<ul>
+					<li>车窗门锁</li>
+					<li>车窗门锁升降不灵</li>
+					<li>天窗开启关闭异常</li>
+					<li>尾窗开启关闭异常</li>
+					<li>门窗雨天漏水</li>
+					<li>钥匙遥控失灵</li>
+				</ul>
+			</div>
+			<select name="od_type3" id="">
+				<option value="1">车窗门锁升降不灵</option>
+				<option value="2">天窗开启关闭异常</option>
+				<option value="3">尾窗开启关闭异常</option>
+				<option value="4">门窗雨天漏水</option>
+				<option value="5">钥匙遥控失灵</option>
+			</select>
+		</div>
+	</div>
+	
+
+	<!-- 添加记录 -->
+	<div class="od_input">
+		<i class="icon icon13"></i>
+		<p class="input_box"><input type="text" placeholder="添加故障描述与记录" /><i class="icon icon14"></i></p>
+	</div>
+
+	<!-- 订单列表 -->
+	<div class="od_list">
+		<dl>
+			<dt>待处理项目</dt>
+			<dd><i class="icon icon20"></i>5月1日 12:15 车窗门锁-车窗玻璃升降不灵</dd>
+		</dl>
+		<dl class="finished">
+			<dt>已处理项目</dt>
+			<dd><i class="icon icon19"></i>5月5日 17:00地盘护板脱落</dd>
+			<dd><i class="icon icon19"></i>5月1日 12:15 车窗门锁-车窗玻璃升降不灵</dd>
+			<dd><i class="icon icon19"></i>5月1日 12:15 车窗门锁-车窗玻璃升降不灵</dd>
+			<dd><i class="icon icon19"></i>5月1日 12:15 车窗门锁-车窗玻璃升降不灵</dd>
+			<dd><i class="icon icon19"></i>5月1日 12:15 车窗门锁-车窗玻璃升降不灵</dd>
+			<dd><i class="icon icon19"></i>5月1日 12:15 车窗门锁-车窗玻璃升降不灵</dd>
+		</dl>
+	</div>
+
+	<div class="od_name od_name_fixed">
+		<img src="img/zzz-100x100.jpg" alt="" />
+		<div class="od_name_info">
+			<h3>中汽南福星4S店</h3>
+			<p class="dark">电话：023-68887700</p>
+			<p class="dark">地址：重庆市九龙坡区二郎高九路99号</p>
+		</div>
+		<a href="###" class="od_name_btn od_name_btn1">预约</a>
+		<a href="###" class="od_name_btn od_name_btn2">选择</a>
+	</div>
+
+	<div class="o_pop2" id="o_pop2" style="display: none;">
+		<ul>
+			<li><i class="icon icon21"></i>修改补充</li>
+			<li><i class="icon icon22"></i>暂缓处理</li>
+			<li><i class="icon icon23"></i>发起诊断</li>
+		</ul>
+		<p class="o_pop2_close"><a href="###">关闭</a></p>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {
+			Select({
+				selector: "#od_type1",
+				option: "#od_type1 .o_pop1",
+				target: "#od_type1 #od_type1_cont",
+				toSelectIndex: function(index) {
+					return index-1;
+				}
+			});
+			Select({
+				selector: "#od_type2",
+				option: "#od_type2 .o_pop1",
+				target: "#od_type2 #od_type2_cont",
+				toSelectIndex: function(index) {
+					return index-1;
+				}
+			});
+			Select({
+				selector: "#od_type3",
+				option: "#od_type3 .o_pop1",
+				target: "#od_type3 #od_type3_cont",
+				toSelectIndex: function(index) {
+					return index-1;
+				}
+			});
+			Select({
+				selector: "#od_type4",
+				option: "#od_type4 .o_pop1",
+				target: "#od_type4 #od_type4_cont",
+				toSelectIndex: function(index) {
+					return index-1;
+				}
+			});
+		});
+		$(".od_list dd").on("tap", function() {
+			$("#o_pop2").show();
+		});
+		$("#o_pop2 .o_pop2_close").on("tap", function() {
+			$("#o_pop2").hide();
+		});
+		$("#o_pop2").on("tap", function(e) {
+			var tar = e.target;
+			if(tar.tagName == "LI") {
+				$(this).find("li").removeClass("cur");
+				$(tar).addClass("cur");
+			}
+		});
+	</script>
+</body>
+</html>

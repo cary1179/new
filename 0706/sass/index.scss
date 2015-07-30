@@ -1,0 +1,60 @@
+@import "mixin";
+
+$micro: "Microsoft Yahei";
+$block_color: #f7f7f7;
+$gray: #999;
+
+%pro_img {display: block; width: 100%; min-height: 80px; background-color: #ccc; }
+%border_v {border: 1px solid #E4E4E4; border-width: 1px 0; }
+%vmiddle {top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.index-banner {
+	img {@extend %pro_img; }
+}
+.index-header {
+	position: relative; height: 85px; padding: 10px 10px 0; margin-top: -40px;
+	img {position: relative; z-index: 1; float: left; width: 60px; height: 60px; background-color: #ccc; }
+	h1, ul {overflow: hidden; }
+	h1 {font-size: 16px; line-height: 30px; color: #fff; font-family: $micro; margin-left: 70px; }
+	ul {position: absolute; bottom: 0; left: 0; right: 0; padding-left: 80px; background-color: #fff; }
+	li {
+		position: relative; float: left; width: 33.3%; height: 35px; text-align: center; padding: 10px 0;
+		p {position: absolute; bottom: 6px; left: 0; right: 0; color: $gray; font-size: 11px; }
+	}
+}
+.index-ad {
+	img {@extend %pro_img; }
+}
+.index-type {
+	ul {padding: 8px 8px 0; overflow: hidden; background-color: $block_color; }
+	li {
+		width: 45%; line-height: 28px; text-align: center; margin-right: 2%; margin-bottom: 2%; padding: 8px 2%; background-color: #fff;
+		img {float: left; width: 28px; height: 28px; background-color: #ccc; }
+	}
+}
+.index-probox {
+	@extend %border_v;
+	img {@extend %pro_img; }
+}
+.index-hot {
+	ul {overflow: hidden; padding: 8px; background-color: #fff; }
+	li {
+		width: 49%; margin-right: 2%;
+		img {@extend %pro_img; }
+	}
+}
+.index-prolist {
+	padding: 8px 8px 0; background-color: #fff;
+	.index-prolist-info {font-size: 12px; line-height: 30px; }
+	li {
+		padding: 8px 0; border-bottom: 1px solid #eee; overflow: hidden;
+		h3 {height: 38px; margin-top: 10px; line-height: 1.4; }
+		img {float: left; width: 100px; height: 100px; background-color: #ccc; }
+		&:last-child {border-bottom: 0; }
+		.index-proinfo {
+			overflow: hidden; margin-left: 108px;
+			.o_price {margin-left: 14px; }
+			.sold {color: $gray; font-size: 10px; padding-left: 15px; }
+		}
+	}
+}

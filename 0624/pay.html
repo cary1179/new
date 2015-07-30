@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>支付</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="css/pay.css" />
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="t_head"><a href="javascript:history.back();"><img src="images/prev.png" class="t_prev"></a>支付</div>
+	<div style="height: 45px;"></div>
+
+	<!-- 支付区 -->
+	<div class="p-price">
+		支付金额：<em class="p-total-price">8888</em>元
+	</div>
+	<div class="p-type">
+		<label for="weixin">
+			<input type="radio" name="pType" id="weixin" checked />
+			<i class="icon-radio"></i>
+			<em class="icon-weixin">微信支付</em>
+		</label>
+		<label for="zhifubao">
+			<input type="radio" name="pType" id="zhifubao" />
+			<i class="icon-radio"></i>
+			<em class="icon-zhifubao">支付宝支付</em>
+		</label>
+	</div>
+	<div class="p-btn"><a href="###">确定</a></div>
+
+	<!--底部导航-->
+	<div class="foot-nav"> 
+	    <ul> 
+	        <li><a href="#" class="ico-1">首页 </a></li>  
+	        <li><a href="#" class="ico-2">我的</a></li>  
+	        <li><a href="tel:123456789" class="ico-3">呼叫 </a></li> 
+	    </ul>
+	</div>
+</body>
+</html>

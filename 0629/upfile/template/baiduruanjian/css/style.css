@@ -1,0 +1,75 @@
+﻿/* CSS Document */
+
+*{ word-wrap: break-word; word-break: break-all;}
+a,a:hover{  font-family:'微软雅黑',Arial,Verdana,'宋体'; color:#333; text-decoration:none;}
+body{ font-family:'微软雅黑',Arial,Verdana,'宋体'; margin: 0; padding: 0;}
+div,form,img,ul,ol,li,dl,dt,dd,table{ font-family:'微软雅黑',Arial,Verdana,'宋体'; margin: 0; padding: 0; list-style-type:none;}
+.top{ font-size:14px; border-bottom:1px solid #dedede; padding:20px 10px 20px 140px; background:url(../img/logo.png) no-repeat left center; overflow:hidden;}
+.top a:hover{ color:#f30;}
+.top span{ float:right; font-size:12px;}
+.top span a:hover{ text-decoration:underline; color:#f30;}
+.bdiv{ width:980px; margin:0 auto;}
+.main{ font-size:14px; line-height:28px; margin:0 auto; overflow:hidden;}
+.main p{ padding:10px 0 0 0;}
+.main .searchbar{ width:100%; background:url(../img/serach-bg.png); border-bottom:1px solid #dedede; height:147px; overflow:hidden;}
+.main .searchbar ul{ width:640px; padding:40px 0 0 0; margin:0 auto;}
+.main .searchbar ul span{ font-size:12px; color:#666;}
+.main .searchbar .form{ background:#c60019;}
+.main .searchbar .form .keyword{ font-size:18px; width:530px; *width: 520px; height:36px; line-height:36px; border:2px solid #c60019;}
+.main .searchbar .form .submit{ font-family:'微软雅黑',Arial,Verdana,'宋体'; width:98px; text-align:center; color:#fff; line-height:34px; font-size:16px; background:none; border:none;}
+.main .title{ text-align:center; font-size:34px; padding:50px 0 10px 0; margin:0 auto; line-height:120%; overflow:hidden;}
+.main .info{ color:#666; font-size:12px; text-align:center; padding:0 0 50px 0; margin:0 auto;}
+.main .content{ text-indent:24px; padding:0 0 30px 0; color:#333; margin:0 auto; overflow:hidden;}
+.main .path{ height:55px; line-height:55px; font-size:12px; border-bottom:1px solid #dedede; color:#666; margin:0 auto; overflow:hidden;}
+.main .path a:hover{ text-decoration:underline; color:#f30;}
+.main .path span{ font-family:'宋体'; padding:0 10px;}
+.main .list{ margin:0 auto; overflow:hidden;}
+.main .list li{ }
+.main .list li a:hover{ text-decoration:underline; color:#f30;}
+.main .list .name{ font-size:24px; line-height:32px; padding:20px 0;}
+.main .list .page{ font-size:12px; text-align:center; height:32px; line-height:32px; padding:10px 0; color:#666;}
+.footer{ width:980px; text-align:center; font-size:12px; height:32px; line-height:32px; border-top:1px solid #dedede; margin:0 auto; overflow:hidden;}
+
+/**错误提示信息**/
+.errmsg1{ font:normal 12px arial; border:1px solid #FF8080; background:#FFF2F2; color:#404040; padding:2px 5px; margin:0 5px 0 0; display:none; line-height:18px;}
+/**textbox**/
+.txt2{  background:#fff url(/content/img/sys/txt2bg.gif) repeat-x left top; font:normal 12px '微软雅黑',arial,'宋体'; height:20px; line-height:20px; color:#666; border:1px solid #A7A6AA; padding:0 3px;}
+/**按钮**/
+.btn2{ background:url(/upfile/member/0/cus/show/button.gif) no-repeat left -30px; width:222px; height:35px; text-align:center; font:normal 14px arial; border:none; cursor:pointer;}
+/**===============注册新会员==============================**/
+/**注册新会员**/
+.regform{ width:980px; margin:0 auto;}
+.regform .rfleft{ font:normal 14px arial; padding:5px 0 0 0; width:150px; text-align:right;}
+.regform .rright div{ float:left;}
+.regform .rright .rbtnlitem{ font:normal 14px arial;}
+.regform .rright .rrerrmsg{ padding:1px 0 0 3px;}
+.regform .rright .rrinfo{ font-size:12px; color:#999; line-height:18px; clear:both;}
+/**注册新会员-邮件激活**/
+.regactivate{}
+.regactivateemail{ font:bold 16px arial; text-align:center; line-height:34px; color:#f00; width:980px; margin:20px auto;}
+/**注册会员-密码强度**/
+.is0{background:url(/upfile/member/0/cus/show/progressImg1.png) no-repeat 0 0;width:138px;height:7px;}
+.is10{background-position:0 -7px;}
+.is20{background-position:0 -14px;}
+.is30{background-position:0 -21px;}
+.is40{background-position:0 -28px;}
+.is50{background-position:0 -35px;}
+.is60{background-position:0 -42px;}
+.is70{background-position:0 -49px;}
+.is80{background-position:0 -56px;}
+.is90{background-position:0 -63px;}
+.is100{background-position:0 -70px;}
+/**会员登陆**/
+.login{ width:980px; margin:20px auto;}
+/**会员登陆-左部**/
+.login .lleft{ width:350px; text-align:right;}
+.login .lleft .lltitle{ font:normal 18px '黑体';}
+/**会员登陆-右部**/
+.login .lright{}
+.login .lright input{ width:200px; height:18px;}
+.login .lright .lrform{ width:100%;}
+.login .lright .lrform td{ padding:1px 0;}
+.login .lright .lrform .lrfleft{ width:50px;}
+.login .lright .lrform .lrfleft div{ float:left;}
+.login .lright .lrform .lrfleft .lrferrmsg{ padding:0 0 0 3px;}
+.login .lright .lrform .lrfleft .lrfbtnaction{ width:58px; height:25px;}

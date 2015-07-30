@@ -1,0 +1,126 @@
+@import "mixin";
+@import "extend";
+
+@mixin animation($val) {
+	-webkit-animation: $val;
+	animation: $val;
+}
+
+.d-banner {
+	position: relative;
+	img {@extend %pro_img; }
+	.d-banner-dot {
+		position: absolute; bottom: 19px; @extend %omiddle;
+		a {
+			display: inline-block; width: 8px; height: 8px; margin: 0 8px; border-radius: 50%; background-color: #A8A7A4;
+			&.cur {background-color: #000; }
+		}
+	}
+}
+
+.d-proinfo {
+	background-color: #fff;
+	%line {padding: 10px; border-bottom: 1px dotted #ddd; }
+	h3 {
+		position: relative; height: 43px; font-size: 15px; @extend %line;
+		a {
+			float: right; width: 30%; line-height: 40px; text-align: center; color: #CC3431; margin: 0 0 0 5%; border: 1px solid #DDD; border-radius: 3px; @include vgradient(#F3F3F3,#FEFEFE,#E8E8E8);
+			.icon22 {vertical-align: -3px; margin-right: 5px; }
+		}
+		em {
+			position: absolute; left: 10px; right: 36.5%; @extend %vmiddle;
+			border-right: 1px solid #ddd;
+		}
+	}
+	p {
+		@extend %line;
+		.d-o_price {
+			display: block; color: #ddd; font-size: 11px; margin-top: 4px;
+			.c_price {color: #ddd; font-size: 11px; font-weight: 400; }
+		}
+		.sold {float: right; font-size: 11px; color: #999; }
+		.d-proinfo-count {display: block; overflow: hidden; color: #FD5E5E; font-size: 12px; }
+		&:last-child {border-bottom-style: solid; }
+	}
+}
+
+.d-shop {
+	li {
+		padding: 10px 15px 10px 0;
+		img {float: left; width: 50px; height: 50px; background-color: #ccc; }
+		.d-shop-info {
+			overflow: hidden; margin-left: 60px;
+			h3, p {line-height: 25px; }
+			h3 {font-size: 15px; }
+			p {color: #999; font-size: 13px; }
+		}
+	}
+	.d-shop-info {
+		margin-right: 15px;
+		&:after {opacity: 0; }
+	}
+	.d-shop-btns {
+		overflow: hidden;
+		a {
+			float: left; width: 49%; text-align: center; border: 1px solid #ddd; border-radius: 3px; margin-right: 2%; box-sizing: border-box;
+			&:last-child {margin-right: 0; }
+		}
+		&:after {opacity: 0; }
+	}
+}
+
+.d-tabs {
+	li {
+		line-height: 40px; text-align: center; @include vgradient(#fff,#fff,#F8F8F8);
+		box-shadow: -1px 0 0 #ddd;
+		border-top: 1px solid #ddd; padding-top: 2px; border-bottom: 1px solid #ddd;
+	}
+	.cur {
+		border-top: 3px solid #FF6700; border-bottom-color: #fff; padding-top: 0; background: #fff;
+	}
+}
+
+.d-detail-imgs {
+	padding: 15px 0 50px; background-color: #fff;
+	img {@extend %pro_img; }
+}
+
+.d-fixed {
+	@extend %fix-bottom; z-index: 10; height: 50px; line-height: 50px; text-align: center; border-top: 1px solid #eee; background-color: #fff;
+}
+.d-fixed-left {
+	float: left; width: 25%; font-size: 11px;
+	a {
+		position: relative; height: 50px; line-height: 1;
+		&:first-child {box-shadow: -1px 0 0 #ddd inset; }
+		em {$w: 13px; position: absolute; top: 6px; left: 50%; z-index: 2; width: $w; height: $w; color: #fff; line-height: $w; text-align: center; font-size: 10px; padding: 1px; border-radius: 50%; background-color: #FF3500; }
+	}
+	.icon {display: block; margin: 10px auto 5px; }
+}
+.d-fixed-right {
+	overflow: hidden; margin-left: 25%;
+	a {color: #fff; }
+	a:first-child {background-color: #FE9A33; }
+	a:last-child {background-color: #E75D00; }
+}
+
+.d-detail-pop {
+	@include animation(popup .5s ease);
+	@extend %fix-bottom; z-index: 3002; padding: 10px; background-color: #fff;
+	.d-name {
+		padding-bottom: 10px; border-bottom: 1px solid #DEDEDE;
+		img { float: left; width: 40px; height: 40px; background-color: #ccc; }
+		h3, p {margin: 0 50px; overflow: hidden; }
+		i {position: absolute; right: 0; top: 10px; font: 50px/42px "simsun"; color: #ccc; }
+	}
+	.d-count-wrap {
+		padding: 10px 0; border-bottom: 1px solid #DEDEDE;
+		.count {
+			padding: 0 30px;
+			i {width: 30px; height: 30px; line-height: 30px; font-size: 20px; background-color: #fff; }
+			input {width: 35px; height: 30px; border-radius: 5px; }
+			.dis {color: #999; }
+		}
+	}
+	.o-btn {font-size: 16px; margin-top: 10px; }
+}

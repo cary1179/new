@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>到店洗</title>
+	<link rel="stylesheet" type="text/css" href="css/wash.css" />
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/com/base.js"></script>
+	<script type="text/javascript" src="js/com/select.js"></script>
+	<script type="text/javascript" src="js/wash.js"></script>
+</head>
+<body class="wash">
+	<div class="header">
+		<header>
+			<span class="js_back">返回</span>
+			<span class="js_caidan"></span>
+			到店洗
+		</header>
+	</div>
+	<!-- 商户名称 -->
+	<div class="shop_name">
+		<img src="img/zzz-100x100.jpg" alt="" /><i class="icon icon2"></i>
+		<div class="shop_name_info">
+			<h2>新牌坊街<em>v1.1</em></h2>
+			<p>重庆渝北区重庆渝北区重庆渝北区重庆渝北区</p>
+		</div>
+		<span class="shop_label">店面实况</span>
+		<span class="locate"><i class="icon icon1"></i>2.1km</span>
+	</div>
+	<div class="shop_name_list">
+		<ul>
+			<li><i class="icon icon3"></i>显示地图</li>
+			<li><i class="icon icon4"></i>导航路线</li>
+			<li><i class="icon icon5"></i>电话预约</li>
+		</ul>
+	</div>
+	<p class="shop_name_comm"><span class="dark dt">评分：4.9分</span>真的又快又干净真的又快又干净真的又快又干净真的又快又干净</p>
+	
+	<!-- 到店时间 -->
+	<div class="book_label">
+		<label>乐途快洗</label>请提交您的预约到店时间
+	</div>
+	<div class="timeline">
+		<ul>
+			<li>09:00</li>
+			<li>11:00</li>
+			<li>13:00</li>
+			<li>15:00</li>
+			<li>17:00</li>
+			<li>19:00</li>
+		</ul>
+		<div class="small_line">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<span class="deadline1"></span>
+		<span class="deadline2"></span>
+	</div>
+
+	<!-- 预约表单 -->
+	<div class="book_form">
+		<h3>到店时间</h3>
+		<div class="tool_bar tool_bar1 tool_bar_select" id="datepop">
+			<span class="tool_label">请选择</span>
+			<p class="tool_cont">2015年5月10日 星期六</p>
+			<div class="o_pop1 o_pop_w" style="display: none;">
+				<ul>
+					<li>2015年5月10日 星期日</li>
+					<li>2015年5月11日 星期一</li>
+				</ul>
+			</div>
+			<select name="datepop" id="">
+				<option value="1">2015年5月10日 星期日</option>
+				<option value="2">2015年5月11日 星期一</option>
+			</select>
+		</div>
+		<div class="tool_bar tool_bar1 tool_bar_select" id="timepop">
+			<span class="tool_label">请选择</span>
+			<p class="tool_cont">服务时间</p>
+		</div>
+		<p class="text">未按预约时间到达系统会自动取消预约</p>
+	</div>
+	<div class="book_form">
+		<h3>服务项目</h3>
+		<div class="tool_bar tool_bar2 tool_bar_select" id="typepop">
+			<p class="tool_cont">快速精洗（限外观）</p>
+			<div class="o_pop1 o_pop_w" style="display: none;">
+				<ul>
+					<li>快速精洗（限外观）</li>
+					<li>aaa</li>
+					<li>bbb</li>
+				</ul>
+			</div>
+			<select name="typepop" id="">
+				<option value="1">快速精洗（限外观）</option>
+				<option value="2">aaa</option>
+				<option value="3">bbb</option>
+			</select>
+		</div>
+		<div class="tool_bar tool_bar2 tool_bar_select">
+			<label class="check_label" for="tool_checkbox"></label>
+			<input type="checkbox" id="tool_checkbox" checked />
+			<i class="icon icon6"></i>
+			<p class="tool_cont">雨天保险</p>
+		</div>
+	</div>
+	<div class="book_form">
+		<h3>我的车辆</h3>
+		<div class="tool_bar tool_bar2 tool_bar_select" id="carpop">
+			<p class="tool_cont">渝BFC007 小型轿车</p>
+			<div class="o_pop1 o_pop_w" style="display: none;">
+				<ul>
+					<li>渝BFC007 小型轿车</li>
+					<li>第一辆</li>
+					<li>第二辆</li>
+				</ul>
+			</div>
+			<select name="carpop" id="">
+				<option value="1">渝BFC007 小型轿车</option>
+				<option value="2">第一辆</option>
+				<option value="3">第二辆</option>
+			</select>
+		</div>
+	</div>
+
+	<!-- 提交区 -->
+	<div class="w_pricebox">
+		<button class="w_account">查余额</button>
+		<i class="icon icon7"></i>费用 178元
+	</div>
+	<div class="w_submit">确认预约</div>
+
+	<div class="w_pop" id="w_pop" style="top: -999em;">
+		<h3><i class="icon icon8"></i>预约时间选择 <i class="icon icon2"></i></h3>
+		<ul>
+			<li>9:00</li>
+			<li>9:30</li>
+			<li>10:00</li>
+			<li>10:30</li>
+			<li>11:00</li>
+			<li>11:30</li>
+			<li>12:00</li>
+			<li>12:30</li>
+			<li>13:00</li>
+			<li>13:30</li>
+			<li>14:00</li>
+			<li>14:30</li>
+			<li>15:00</li>
+			<li>15:30</li>
+			<li>16:00</li>
+			<li>16:30</li>
+			<li>17:00</li>
+			<li>17:30</li>
+			<li class="cur">18:00</li>
+			<li>18:30</li>
+		</ul>
+		<p class="text">19:00-24:00为晚间服务（限VIP会员）</p>
+		<ul>
+			<li>19:00</li>
+			<li>19:30</li>
+			<li>20:00</li>
+			<li>20:30</li>
+			<li>21:00</li>
+			<li>21:30</li>
+			<li>22:00</li>
+			<li>22:30</li>
+			<li>23:00</li>
+			<li>23:30</li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="w_pop_confirm">
+			<a href="###" class="w_pop_false" id="wTime_no">取消</a>
+			<a href="###" class="w_pop_true" id="wTime_yes">确定</a>
+		</div>
+		<select name="timepop1" id="">
+			<option value="09:00">09:00</option>
+			<option value="09:30">09:30</option>
+			<option value="10:00">10:00</option>
+			<option value="10:30">10:30</option>
+			<option value="11:00">11:00</option>
+			<option value="11:30">11:30</option>
+			<option value="12:00">12:00</option>
+			<option value="12:30">12:30</option>
+			<option value="13:00">13:00</option>
+			<option value="13:30">13:30</option>
+			<option value="14:00">14:00</option>
+			<option value="14:30">14:30</option>
+			<option value="15:00">15:00</option>
+			<option value="15:30">15:30</option>
+			<option value="16:00">16:00</option>
+			<option value="16:30">16:30</option>
+			<option value="17:00">17:00</option>
+			<option value="17:30">17:30</option>
+			<option value="18:00">18:00</option>
+			<option value="18:30">18:30</option>
+			<option value="19:00">19:00</option>
+			<option value="19:30">19:30</option>
+			<option value="20:00">20:00</option>
+			<option value="20:30">20:30</option>
+			<option value="21:00">21:00</option>
+			<option value="21:30">21:30</option>
+			<option value="22:00">22:00</option>
+			<option value="22:30">22:30</option>
+			<option value="23:00">23:00</option>
+			<option value="23:30">23:30</option>
+		</select>
+	</div>
+
+	<div class="mask"></div>
+</body>
+</html>

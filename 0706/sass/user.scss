@@ -1,0 +1,62 @@
+@import "mixin";
+%border_v {border: 1px solid #E4E4E4; border-width: 1px 0; }
+%arr_r {
+	content: ""; position: absolute; right: 15px; top: 50%;
+	width: 8px; height: 8px; margin-top: -5px; border: 2px solid #999; border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.user-name {
+	$imgw: 44px;
+	$pad: 10px;
+	$bg: #FE6F00;
+	position: relative; padding: $pad; background-color: $bg; overflow: hidden;
+	img {float: left; width: $imgw; height: $imgw; border: 2px solid #fff; border-radius: 50%; overflow: hidden; }
+	.user-name-info {
+		color: #fff; line-height: 24px; overflow: hidden; margin-left: $imgw+8px;
+		p {font-size: 13px; }
+	}
+	&:after {
+		content: ""; position: absolute; right: 10px; top: 50%;
+		@include arrow;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(-45deg) translateY(-50%);
+		transform: rotate(-45deg) translateY(-50%);
+	}
+}
+.user-count {
+	$green: #00CF00;
+	$orange: #ED3A12;
+	$h: 28px;
+	$pad: 8px 10px;
+	$borderColor: #DEDEDE;
+	height: $h; line-height: $h; padding: $pad; border-bottom: 1px solid $borderColor; background-color: #fff; overflow: hidden;
+	.c_price {color: $orange; }
+	.user-get-count {
+		color: #fff; font-size: 13px; line-height: 14px; padding: 7px 12px; border-radius: 3px; background-color: $green;
+		.icon10 {margin-right: 5px; background-color: #fff; vertical-align: top; }
+
+	}
+}
+.user-bar {
+	@extend %border_v;
+	background-color: #fff;
+	li {
+		position: relative; line-height: 33px; padding-right: 15px; margin-left: 15px; border-bottom: 1px solid #DEDEDE; 
+		.icon {margin-right: 10px; vertical-align: middle; background-color: #ccc; }
+		&:after {@extend %arr_r; }
+		&:last-child {border-bottom: 0; }
+	}
+	a.fr {color: #999; margin-right: 15px; }
+}
+.my-orders {
+	$borderC: #DEDEDE;
+	padding: 10px 0; border-top: 1px solid $borderC; background-color: #fff;
+	a {text-align: center; box-shadow: -1px 0 0 $borderC; }
+	.icon {
+		display: block; margin: 0 auto; background-color: #ccc;
+		&.icon18, &.icon21 {margin-bottom: 1px; }
+		&.icon20 {margin: 2px auto 3px; }
+	}
+}

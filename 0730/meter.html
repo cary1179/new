@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<title>尺霸</title>
+	<link rel="stylesheet" type="text/css" href="css/meter.css" />
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<!-- 头部 S -->
+	<img src="img/header.png" style="display: block;width:100%;" alt="" />
+	<!-- 头部 E -->
+	<img src="img/banner.jpg" alt="" class="banner" />
+
+	<h2 class="start tc">START</h2>
+
+	<h3 class="step-bar step1 tc"><label>STEP1</label>输入身高体重，为您查询服装尺寸</h3>
+	<div class="box1">
+		<div class="center">
+			<div class="box_line mb10">
+				性别：
+				<label for="ck1"><input type="radio" name="sex" id="ck1" checked /><i class="imt imt1"></i>男</label>
+				<label for="ck2"><input type="radio" name="sex" id="ck2" /><i class="imt imt1"></i>女</label>
+			</div>
+			<div class="box_line mb10">年龄：
+				<input type="text" /> 周岁
+			</div>
+			<div class="box_line mb10">身高：
+				<input type="text" /> cm
+			</div>
+			<div class="box_line mb10">体重：
+				<input type="text" /> kg
+			</div>
+			<div class="box_line mb10">体型：
+				<span class="select">
+					<input type="text" readonly value="凸体" /><i class="arr_down"></i>
+					<ul>
+						<li>正常</li>
+						<li>微胖</li>
+						<li>微瘦</li>
+					</ul>
+				</span>
+			</div>
+		</div>
+	</div>
+	<h3 class="step-bar step2 tc"><label>STEP2</label>校准净体尺寸</h3>
+	<div class="table mb30">
+		<table>
+			<tr>
+				<th>项目</th>
+				<th>尺寸</th>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>净胸围95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>净腰围95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>净臀围95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="table-info">
+						<img src="img/zzz-meter1.jpg" alt="" />
+						<h4>胸围测量说明：</h4>
+						<p class="list-content"><em>1.</em>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+						<p class="list-content"><em>2.</em>内容内容内容内容</p>
+						<p>注：</p>
+						<p>1.内容内容内容内</p>
+						<p>2.内容内容内容内容内容内容内容内容内容内容</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="says fred">点击<i class="imt imt2"></i>图标查看测量方法及测量示意图</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<h3 class="step-bar step3 tc"><label>STEP3</label>服装尺寸</h3>
+	<div class="table">
+		<div class="tc table-type">品类选择
+			<span class="select">
+				<input type="text" readonly="" class="bgfff" value="衬衫"><i class="arr_down bgfff"></i>
+				<ul>
+					<li>衬衫</li>
+					<li>微胖</li>
+					<li>微瘦</li>
+				</ul>
+			</span>
+		</div>
+		<table>
+			<tr>
+				<th>项目</th>
+				<th>尺寸</th>
+			</tr>
+			<tr>
+				<td>版型</td>
+				<td>
+					<div class="change" id="change">
+						<i class="cg_next" id="next"></i><i class="cg_prev" id="prev"></i><input type="text" value="经典" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>领围95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>胸围95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>腰围95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>肩宽95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="imt imt2 imt3"></i>袖长95cm</td>
+				<td><em class="count-info">cm</em>
+					<div class="count">
+						<i class="add">+</i><i class="cut">-</i><input type="text" value="95" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="table-info">
+						<img src="img/zzz-meter1.jpg" alt="" />
+						<h4>胸围测量说明：</h4>
+						<p class="list-content"><em>1.</em>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+						<p class="list-content"><em>2.</em>内容内容内容内容</p>
+						<p>注：</p>
+						<p>1.内容内容内容内</p>
+						<p>2.内容内容内容内容内容内容内容内容内容内容</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="says fred">点击<i class="imt imt2"></i>图标查看测量方法及测量示意图</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="announce">
+		<h3 class="tc fred"><i class="imt imt4"></i>敬告</h3>
+		<p class="list-content"><em>1、</em>内容内容内容内容内容内容内容内容内容内容</p>
+		<p class="list-content"><em>2、</em>点击 <i class="imt imt2"></i> 内容内容内容内容内容内容内容内容内容</p>
+	</div>
+
+	<!-- 尾部 S -->
+	<img src="img/footer.png" style="display: block;width:100%;" alt="" />
+	<!-- 尾部 E -->
+</body>
+</html>

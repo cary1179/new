@@ -1,0 +1,12 @@
+%pro_img {display: block; width: 100%; min-height: 80px; background-color: #ccc; }
+%border_v {border: 1px solid #E4E4E4; border-width: 1px 0; }
+%fix-top {position: fixed; top: 0; left: 0; right: 0; }
+%fix-bottom {position: fixed; bottom: 0; left: 0; right: 0; }
+%vmiddle {top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+%omiddle {left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+%arr_r {
+	content: ""; position: absolute; right: 15px; top: 50%;
+	width: 8px; height: 8px; margin-top: -5px; border: 2px solid #999; border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}

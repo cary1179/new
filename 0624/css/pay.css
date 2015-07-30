@@ -1,0 +1,69 @@
+.p-price {
+  font-size: 15px;
+  color: #424242;
+  text-align: center;
+  margin: 42px auto 40px; }
+  .p-price .p-total-price {
+    color: #27A94B;
+    font-size: 18px;
+    font-style: normal;
+    margin: 0 36px; }
+
+.p-type {
+  margin: 10px auto 20px; }
+  .p-type .icon-radio {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 24px;
+    background-color: #BEBEBE; }
+  .p-type .icon-weixin, .p-type .icon-zhifubao {
+    display: inline-block;
+    text-indent: -999em;
+    vertical-align: middle;
+    background: url(../images/pay.png) no-repeat;
+    background-size: 250px 250px; }
+  .p-type .icon-weixin {
+    width: 180px;
+    height: 42px;
+    background-position: 0 0; }
+  .p-type .icon-zhifubao {
+    width: 211px;
+    height: 62px;
+    background-position: 0 -42px; }
+  .p-type label {
+    display: block;
+    width: 260px;
+    margin: 0 auto 30px; }
+  .p-type input {
+    display: none; }
+    .p-type input:checked + .icon-radio {
+      background-color: #2BC85A; }
+
+.p-btn {
+  display: block;
+  text-align: center;
+  margin: 50px 35px 20px;
+  border-radius: 10px;
+  background-color: #2BC85A; }
+  .p-btn a {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    line-height: 50px; }
+
+.mask {
+  position: fixed;
+  top: 0;
+  bottom: 58px;
+  left: 0;
+  right: 0;
+  z-index: 3001;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.guide {
+  float: right;
+  margin-right: 10px;
+  zoom: .5; }

@@ -1,0 +1,299 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block
+}
+body {
+	line-height:1
+}
+ol,ul {
+	list-style:none
+}
+blockquote,q {
+	quotes:none
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+body {
+	font:16px/1 STHeiti,"Microsoft Yahei",Helvetica,Verdana,sans-serif;
+	color:#000;
+	background:#fff
+}
+a {
+	outline:0;
+	text-decoration:none;
+	color:#333
+}
+html,body {
+	overflow:hidden
+}
+html,body,#container,#content {
+	width:100%;
+	height:100%
+}
+#container {
+	position:relative;
+	min-width:600px;
+	min-height:580px
+}
+#header,#footer {
+	width:100%;
+	position:absolute;
+	left:0;
+	z-index:1
+}
+#header {
+	top:0;
+	height:63px;
+	border-bottom:1px solid #dedede;
+}
+#header .header-inner {
+	padding:22px 30px 0;
+	overflow:hidden
+}
+#header h1 {
+	width:126px;
+	height:26px;
+	overflow:hidden;
+	float:left;
+	text-indent:-999px;
+	background-repeat: no-repeat;
+}
+#download-all {
+	float:right;
+	font-size:14px;
+	line-height:18px
+}
+#download-all .download-all-icon {
+	width:20px;
+	height:20px;
+	margin-right:4px;
+	float:left;
+	background-repeat: no-repeat;
+}
+.footer {
+	text-align:center;
+	font-size:12px;
+	height:32px;
+	line-height:32px;
+	bottom:0;
+	border-top:1px solid #dedede;
+}
+#nav {
+	max-width:1000px;
+	margin:0 auto;
+	overflow:hidden
+}
+#nav li {
+	width:14%;
+	position:relative;
+	float:left
+}
+#nav a {
+	display:block;
+	height:50px;
+	font-size:14px;
+	text-align:center;
+	line-height:50px;
+	cursor:pointer;
+	color:#b2b2b2;
+	-webkit-transition:color .4s linear 0s;
+	-moz-transition:color .4s linear 0s;
+	-ms-transition:color .4s linear 0s;
+	-o-transition:color .4s linear 0s;
+	transition:color .4s linear 0s
+}
+#nav a:hover,#home #nav .nav-home a,#about #nav .nav-about a,#help #nav .nav-help a,#log #nav .nav-log a {
+	color:#fff
+}
+#nav-highlight {
+	width:60px;
+	height:2px;
+	overflow:hidden;
+	position:absolute;
+	top:37px;
+	background:#fff
+}
+#home #nav-highlight {
+	width:30px
+}
+#nav .nav-fresh-icon {
+	width:28px;
+	height:13px;
+	margin-left:32px;
+	position:absolute;
+	top:12px;
+	left:50%;
+	background-repeat: no-repeat;
+}
+#content {
+	position:relative;
+	z-index:0
+}
+.tip {
+	width:120px;
+	height:40px;
+	padding:6px 14px;
+	position:absolute;
+	border:solid 1px #777;
+	background:#fff
+}
+.tip-text {
+	display:block;
+	font-size:12px;
+	text-align:center;
+	line-height:1.5;
+	color:#777
+}
+.tip-arrow {
+	width:16px;
+	height:7px;
+	margin-left:-8px;
+	position:absolute;
+	left:50%;
+	z-index:1
+}
+.tip-icon {
+	position:absolute
+}
+.tip-bottom .tip-arrow {
+	top:-7px;
+	background:url(/upfile/template/baiduruanjian/img/bg-tip-top-png8_dec04a7.png) no-repeat
+}
+.tip-top .tip-arrow {
+	top:100%;
+	background:url(/upfile/template/baiduruanjian/img/bg-tip-bottom-png8_81ad99a.png) no-repeat
+}
+.header-tip {
+	width:133px;
+	height:50px;
+	padding:14px 14px 0 70px;
+	top:53px;
+	right:30px;
+	text-align:left
+}
+.header-tip .tip-arrow {
+	margin:0;
+	right:36px;
+	left:auto
+}
+.header-tip .tip-icon {
+	width:48px;
+	height:48px;
+	top:8px;
+	left:14px;
+	background:url(/upfile/template/baiduruanjian/img/icon-tip-wk_91853f5.png) no-repeat
+}
+.header-tip .tip-text {
+	text-align:left
+}
+.parents-tip,.userpoint-tip {
+	width:133px;
+	height:50px;
+	padding:14px 14px 0 70px;
+	text-align:left
+}
+.parents-tip .tip-icon,.userpoint-tip .tip-icon {
+	width:48px;
+	height:48px;
+	top:8px;
+	left:14px;
+	background:url(/upfile/template/baiduruanjian/img/icon-tip-parents-png8_34d863e.png) no-repeat
+}
+.userpoint-tip .tip-icon {
+	background:url(/upfile/template/baiduruanjian/img/icon-tip-userpoint_189032f.png) no-repeat
+}
+.parents-tip .tip-text,.userpoint-tip .tip-text {
+	text-align:left
+}
+@media screen and (max-height:580px) {
+	html,body {
+	overflow-y:auto
+}
+}@media screen and (max-width:640px) {
+	html,body {
+	overflow-x:auto
+}
+}body,body {
+	overflow:hidden!important
+}
+#container {
+	min-width:0;
+	min-height:0
+}
+#help #content {
+	overflow:auto
+}
+#help-content {
+	width:700px;
+	padding:125px 0 0 0;
+	margin:0 auto;
+	color:#333
+}
+#help-content h1 {
+	width:234px;
+	height:55px;
+	margin:0 auto 65px;
+	text-indent:-999px;
+	background:url(/upfile/template/baiduruanjian/img/text-help-title-png8_87ba276.png) no-repeat
+}
+#help-content dt {
+	margin-bottom:15px;
+	font-size:20px
+}
+#help-content dd {
+	margin-bottom:70px
+}
+#help-content p {
+	margin-bottom:35px;
+	font-size:12px;
+	line-height:1.8;
+	color:#414141
+}
+#help-content img {
+	width:700px;
+	max-width:700px
+}
+#help-content a {
+	text-decoration:underline;
+	color:#999
+}
+@media screen and (max-height:870px) {
+	#help-content h1 {
+	width:156px;
+	height:38px;
+	margin-bottom:55px;
+	text-indent:-999px;
+	background:url(/upfile/template/baiduruanjian/img/text-help-title-png8_e4cf971.png) no-repeat
+}
+}.lte8 .max-height-768 #help-content h1 {
+	width:156px;
+	height:38px;
+	margin-bottom:55px;
+	text-indent:-999px;
+	background:url(/upfile/template/baiduruanjian/img/text-help-title-png8_e4cf971.png) no-repeat
+}
+#header h1 {
+	background-position:0px 0px
+}
+#download-all .download-all-icon {
+	background-position:-106px -29px
+}
+#nav .nav-fresh-icon {
+	background-position:-98px -52px
+}
+#header h1,#download-all .download-all-icon,#nav .nav-fresh-icon {
+	background-image: url(/upfile/template/baiduruanjian/img/help_z_053d057.png)
+}

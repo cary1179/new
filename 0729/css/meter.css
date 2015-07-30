@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* css reset */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,em,button{margin:0;padding:0;}
+body{ font:12px/1.5 arial,Microsoft Yahei,Simsun,sans-serif; color:#333; background-color: #fff; }
+.clear:after{content: "."; display: block;height: 0; clear: both; visibility: hidden;}
+img,input,fieldset{border:0 none;vertical-align:middle;}
+input, textarea{font-size:12px;border: 0;}
+table{border-collapse:collapse;}
+a{color:#06c;text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4,h5{font-family: "Microsoft Yahei", "Times New Roman",Simsun;}
+ul,ol{list-style:none;}
+input[type="button"],input[type="submit"]{-webkit-appearance:none;}
+input[type="text"]{border-radius:0;}
+.clear {*zoom: 1; }
+.clear:after {content: ""; display: block; clear: both; height: 0; line-height: 0; font-size: 0; }
+.clearall {clear: both; }
+
+/* = global = */
+.fl {float: left; }
+.fr {float: right; }
+.fz14 {font-size: 14px; }
+.fz16 {font-size: 16px; }
+.fz18 {font-size: 18px; }
+.fz20 {font-size: 20px; }
+.ftsim {font-family: "simsun", arial; }
+.c333 {color: #333; }
+.cred {color: #FF5D5D; }
+.tc {text-align: center; }
+.tr {text-align: right; }
+.center {width: 1180px; margin: 0 auto; }
+.btn_comm {display: inline-block; text-align: center; }
+.btn_comm:hover {text-decoration: none; }
+.btn_1 {width: 420px; height: 56px; line-height: 56px; font-size: 20px; color: #fff; background-color: #FF5D5D; }
+.btn_2 {width: 144px; height: 40px; line-height: 40px; font-size: 16px; color: #fff; background-color: #55BDFF; }
+.btn_3 {width: 168px; height: 42px; line-height: 42px; font-size: 16px; color: #fff; background-color: #D0D0D0; }
+
+/* = sprite = */
+.imt {position: relative; display: inline-block; background: url(../img/sprite_imt.png) no-repeat; }
+.imt1 {width: 27px; height: 14px; background-position: 0 0; }/*眼镜亮*/
+.imt2 {width: 27px; height: 14px; background-position: 0 -16px; }/*眼镜暗*/
+.imt3, .imt4, .imt5, .imt6, .imt7, .imt8, .imt9 {width: 34px; height: 34px; }
+.imt3 {background-position: -29px -1px; }
+.imt4 {background-position: -66px -1px; }
+.imt5 {background-position: -102px -1px; }
+.imt6 {background-position: -137px -1px; }
+.imt7 {background-position: -172px -1px; }
+.imt8 {background-position: -209px -1px; }
+.imt9 {background-position: -244px -1px; }
+.imt10 {width: 26px; height: 26px; background-position: -279px -3px; }
+.imt11 {width: 19px; height: 19px; background-position: 10px 10px; }
+.imt12 {width: 19px; height: 19px; background-position: -306px -2px; }
+
+/* = step = */
+.meter_tit {font-size: 25px; text-align: center; margin: 45px auto 25px; }
+.meter_step {display: block; margin: 0 auto 64px; }
+.meter_s_tit {display: block; width: 170px; height: 40px; text-indent: -999em; margin: 0 auto 35px; background: url(../img/istart.png) no-repeat 0 0; }
+
+/* = 主区 = */
+.meterbox {position: relative; padding: 40px 0 100px; }
+.meterbox:before {content: ""; position: absolute; top: 0; left: 50%; width: 0; height: 0; margin-left: -30px; border: 30px solid transparent; border-top: 20px solid #fff; }
+.meter-step-icon {display: block; width: 56px; height: 46px; line-height: 30px; color: #fff; text-align: center; font-size: 24px; font-style: normal; margin: 0 auto 25px; padding: 5px 0; border-radius: 50%; background-color: #98A6F7; }
+.meter-step-icon:after {content: "Step"; display: block; font-size: 12px; width: 30px; line-height: 1; margin: 0 auto; }
+.meterbox h3 {font-size: 30px; text-align: center; color: #000; letter-spacing: 2px; font-weight: 400; margin-bottom: 60px; }
+.meterbox label {float: left; line-height: 44px; font-size: 20px; margin-right: 70px; }
+.meterbox input {width: 60px; height: 42px; line-height: 42px; font-size: 16px; padding: 0 5px; border: 1px solid #C1C1C1; background-color: #fff; }
+.meterbox .imt1 {margin-right: 20px; }
+.meterbox .fz14 {padding-left: 10px; }
+.meterbox .select {vertical-align: top; }
+.meterbox .btn_1 {margin: 60px 0 10px; }
+.meterbox .imt10 {vertical-align: middle; margin-right: 15px; }
+.meter1 {background-color: #EFF5FB; }
+.meter1:before {border-top-color: #fff; }
+.meter1 .count i {color: #CBD5DF; }
+.meter1 .count i, .meter1 .count input {background-color: #F1F3F6; }
+.meter1 table td {background-color: #fff; }
+.meter1 .pd-intent {padding-left: 60px; }
+.meter2 {background-color: #fff; }
+.meter2:before {border-top-color: #EFF5FB; }
+.meter2 .count i {color: #D7D7D7; }
+.table_content1 {color: #666; font-size: 14px; font-family: "simsun"; padding: 0 70px; }
+.table_content1 b {display: inline-block; font-size: 18px; color: #333; font-weight: 400; font-family: "Microsoft Yahei", arial; margin-bottom: 25px; }
+.table_content1 .num {float: left; margin-left: -30px; }
+.table_content1 .cont_list {padding-left: 30px; }
+.meterbox .attention {margin-left: 120px; margin-top: -25px; }
+.meterbox .mt-type {position: relative; z-index: 1; font-size: 20px; line-height: 42px; margin: 10px auto; }
+.meterbox .mt-type .select {min-width: 90px; text-align: center; }
+.mt-save {font-weight: 700; letter-spacing: 3px; }
+
+.table {}
+.table table {width: 100%; font-size: 18px; text-align: center; table-layout: fixed; }
+.table th {height: 48px; font-size: 20px; font-weight: 400; color: #fff; background-color: #98A6F7; }
+.table .td1, .table .td2 {width: 26%; }
+.table td {position: relative; padding: 20px 0; border: 3px solid transparent; background-color: #EFF5FB; }
+.table td em {position: absolute; right: 25px; bottom: 20px; color: #999; font-style: normal; }
+.table td .img_tit {display: block; font-size: 22px; margin-bottom: 25px; }
+.table img {width: 450px; }
+
+/* = 弹层 = */
+.mask {display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 999; background-color: rgba(0,0,0,.5); }
+.pop {position: absolute; z-index: 1000; font-size: 16px; padding: 60px 100px; border: 6px solid #B6B8C6; border-radius: 10px; background-color: #fff; }
+.pop h3 {font-size: 20px; font-weight: 400; margin-bottom: 30px; }
+.pop label {font-size: 20px; margin-right: 60px; }
+.pop .imt {margin-right: 20px; vertical-align: middle; }
+.pop .pop_line {margin-bottom: 30px; }
+.pop .mb10 {margin-bottom: 10px; }
+.pop .btn_1 {width: 168px; height: 42px; line-height: 42px; vertical-align: top; }
+.pop .imt11 {background-color: #E7EBF1; background-position: 20px 20px; }
+.pop input[type="radio"] {display: none; }
+.pop input:checked + .imt {background-position: -306px -2px; }
+.pop2 .imt {margin-right: 5px; }
+.pop2 label {font-size: 16px; color: #999; margin-right: 30px; }
+.pop2 .middle_ipt {width: 206px; height: 32px; font-size: 20px; padding: 6px 10px; border: 1px solid #E0E1E2; }
+
+/* = 模拟select = */
+.select {position: relative; display: inline-block; height: 40px; line-height: 40px; padding: 0 35px 0 15px; border: 1px solid #c1c1c1; background-color: #fff; }
+.select:after {content: ""; position: absolute; right: 8px; top: 16px; width: 0; height: 0; border: 10px solid transparent; border-top: 10px solid #D5DADF; cursor: pointer; }
+.select ul {display: none; border: 1px solid #ddd; border-bottom: 0; }
+.select li {padding-left: 15px; border-bottom: 1px solid #ddd; }
+.select li:hover {background-color: #EFeeFB}
+.select.open ul {display: block; position: absolute; top: 45px; left: 0; right: 0; background-color: #fff; }
+
+/* = 评论 = */
+.mt-comment {padding: 50px 0 60px; }
+.mt-comment h3 {display: inline-block; margin-right: 15px; font-size: 30px; }
+.mt-comment textarea {display: block; width: 98%; height: 120px; font-size: 16px; font-family: "Microsoft Yahei"; margin-bottom: 25px; padding: 10px 1%; border: 1px solid #CBCBCB; resize: none; }
+.mt-comments {padding: 20px 0; }
+.mt-comments ul {border-top: 1px solid #CFCFCF; }
+.mt-comments li {line-height: 30px; color: #a4a4a4; padding: 25px 0 10px; border-bottom: 1px solid #CFCFCF; }
+.mt-comment-num {color: #EF5632; font-style: normal; }
+
+/* = 分享 = */
+.mt_share {line-height: 80px; color: #BDBDBD; }
+.mt_share .imt {text-indent: -999em; font-size: 0; line-height: 0; vertical-align: middle; margin-right: 15px; }
+.mt_share .cred {padding-right: 15px; }
+
+/* = 加减控件 = */
+.count {display: inline-block; width: 140px; }
+.count i {width: 32px; height: 32px; line-height: 32px; font-size: 20px; color: #D7D7D7; background-color: #fff; cursor: pointer; }
+.count .add {float: right; }
+.count .cut {float: left; }
+.count input {display: block; height: 32px; line-height: 32px; font-size: 20px; text-align: center; margin: 0 35px; border: 0; }
+
+/* = 变更控件 = */
+.change {display: inline-block; width: 130px; }
+.change i {width: 0; height: 0; margin-top: 8px; border: 8px solid transparent; cursor: pointer; }
+.change .cg_next {float: right; border-left: 8px solid #98A6F7; }
+.change .cg_prev {float: left; border-right: 8px solid #98A6F7; }
+.change input {display: block; height: 32px; line-height: 32px; font-size: 18px; text-align: center; margin: 0 30px; border: 0; background-color: #F1F3F6; }

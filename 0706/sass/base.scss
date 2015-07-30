@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* import */
+@import "reset";
+@import "mixin";
+
+@import "index";
+@import "market";
+@import "user";
+@import "detail";
+@import "list";
+@import "order";
+
+%sprite {position: relative; z-index: 1; display: inline-block; background: url(../img/sprite.png) no-repeat; background-size: 250px auto; }
+%fix-bottom {position: fixed; bottom: 0; left: 0; right: 0; }
+@mixin animation($val) {
+	-webkit-animation: $val;
+	animation: $val;
+}
+
+body {min-width: 320px; }
+
+.fz12 {font-size: 12px; }
+.fz18 {font-size: 18px; }
+.f333 {color: #333 !important; }
+.f666 {color: #666 !important; }
+.f999 {color: #999 !important; }
+.fccc {color: #ccc !important; }
+.fred {color: #C30604 !important; }
+.fora {color: #f60 !important; }
+
+.icon1 {width: 14px; height: 13px; background-position: 0px 0px; }
+.icon2 {width: 16px; height: 16px; background-position: -16px 0px; }
+.icon3 {width: 23px; height: 19px; background-position: -52px -22px; }
+.icon4 {width: 19px; height: 20px; background-position: -75px -22px; }
+.icon5 {width: 17px; height: 17px; background-position: -95px -22px; }
+.icon6 {width: 19px; height: 21px; background-position: -113px -22px; }
+.icon7 {width: 75px; height: 75px; background-position: -56px -43px; }/* 没有分销订单 */
+.icon8 {width: 18px; height: 18px; background-position: -150px 0px; }/* 分销链接icon */
+.icon9 {width: 19px; height: 19px; background-position: -168px 0px; }/* 分销链接icon */
+.icon10 {width: 14px; height: 14px; background-position: -189px 0px; }/* 提现 */
+.icon11 {width: 11px; height: 15px; background-position: 0px -22px; }/* 我的订单 */
+.icon12 {width: 16px; height: 12px; background-position: -12px -22px; }/* 我的优惠券 */
+.icon13 {width: 12px; height: 12px; background-position: -29px -22px; }/* 我的购物车 */
+.icon14 {width: 15px; height: 13px; background-position: 0px -38px; }/* 我的收藏 */
+.icon15 {width: 14px; height: 13px; background-position: -16px -38px; }/* 我的浏览记录 */
+.icon16 {width: 11px; height: 15px; background-position: -31px -37px; }/* 收货地址管理 */
+.icon17 {width: 14px; height: 15px; background-position: 0px -53px; }/* 消息提醒设置 */
+.icon18 {width: 20px; height: 21px; background-position: -132px -58px; }/* 待付款 */
+.icon19 {width: 24px; height: 22px; background-position: -153px -58px; }/* 待发货 */
+.icon20 {width: 24px; height: 17px; background-position: -178px -58px; }/* 待收货 */
+.icon21 {width: 21px; height: 21px; background-position: -203px -58px; }/* 退换货 */
+.icon22 {width: 16px; height: 16px; background-position: -222px 0; }/* 我要分销 */
+.icon23 {width: 15px; height: 12px; background-position: -216px -17px; }/* 查看全部商品 */
+.icon24 {width: 19px; height: 17px; background-position: -230px -35px; }/* 进店逛逛 */
+.icon25 {width: 17px; height: 17px; background-position: -232px -17px; }/* 收藏 */
+.icon26 {width: 10px; height: 17px; background-position: 0 -71px; }/* 列表返回 */
+.icon27 {width: 24px; height: 20px; background-position: 0 -89px; }/* 列表筛选 */
+.icon28 {width: 10px; height: 13px; background-position: -30px -69px; }/* 列表筛选价格 */
+.icon29 {width: 21px; height: 20px; background-position: -155px -81px; }/* 所有商品 */
+.icon30 {width: 19px; height: 24px; background-position: -30px -88px; }/* 确认订单 */
+.icon31 {width: 13px; height: 18px; background-position: -176px -81px; }/* 新增地址 */
+.icon32 {width: 19px; height: 20px; background-position: -190px -81px; }/* 小店图标 */
+.icon33 {width: 16px; height: 16px; background-position: -205px 0; }/* 分销如何赚钱 */
+%fundicon {display: block; width: 52px; height: 52px; margin: 13px auto 8px; }
+.icon34 {@extend %fundicon; background-position: 0px -120px; }/* 分销图标1 */
+.icon35 {@extend %fundicon; background-position: -53px -120px;; }/* 分销图标2 */
+.icon36 {@extend %fundicon; background-position: -106px -120px;; }/* 分销图标3 */
+.icon37 {@extend %fundicon; background-position: -159px -120px; }/* 分销图标4 */
+.icon38 {@extend %fundicon; background-position: 0px -173px; }/* 分销图标5 */
+.icon39 {@extend %fundicon; background-position: -53px -173px; }/* 分销图标6 */
+.icon40 {@extend %fundicon; background-position: -106px -173px; }/* 分销图标7 */
+.icon41 {@extend %fundicon; background-position: -159px -173px; }/* 分销图标8 */
+.icon42 {width: 89px; height: 76px; background-position: 0 -226px; }/* 购物车空 */
+.icon43 {width: 64px; height: 73px; background-position: -91px -226px; }/* 订单空 */
+.icon44 {width: 36px; height: 36px; background-position: -155px -226px; }/* 分销商特权1 */
+.icon45 {width: 40px; height: 40px; background-position: -192px -226px; }/* 分销商特权2 */
+.icon {@extend %sprite; }
+
+.mt8 {margin-top: 8px; }
+.mb8 {margin-bottom: 8px; }
+.tr {text-align: right; }
+.mask {position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 3001; background-color: rgba(0,0,0, .8); }
+
+.count {
+	$b: #ccc;
+	position: relative; display: inline-block; border: 1px solid $b; padding: 0 27px;
+	i {
+		position: absolute; top: 0; width: 25px; height: 25px; line-height: 25px; text-align: center; background-color: #eee;
+		&:first-child {left: 0; }
+		&:last-child {right: 0; }
+	}
+	input {width: 34px; height: 25px; text-align: center; line-height: normal; border: 1px solid $b; border-width: 0 1px; }
+}
+
+.check-label {
+	position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 5;
+	&:before {content: ""; position: absolute; left: 0; width: 18px; height: 18px; border: 1px solid #999; border-radius: 50%; background-color: #fff; @extend %vmiddle; }
+	&:after {
+		content: ""; display: none; position: absolute; top: 50%; left: 7px; margin-top: -2px; width: 8px; height: 4px; border: 2px solid #fff; border-width: 0 0 2px 2px;
+		-webkit-transform: rotate(-45deg) translateY(-50%); transform: rotate(-45deg) translateY(-50%);
+	}
+}
+
+.c_price {
+	font-size: 16px; color: #FF6600; font-weight: 700;
+	&:before {content: "\00a5"; margin-right: 3px; }
+}
+.o_price {
+	font-size: 13px; color: #999;
+	&:before {content: "\00a5"; }
+}
+.d_label {
+	line-height: 16px; color: #fff; font-size: 11px; padding: 2px 3px; background-color: #FD6801;
+}
+
+.list-col2 {
+	li {
+		float: left;
+		&:nth-child(2n) {margin-right: 0; }
+	}
+}
+
+.o-btn {
+	display: inline-block; line-height: 38px; font-size: 13px; text-align: center; padding: 0 8px; border-radius: 3px; background-color: #FF6600;
+}
+.o-btn1 {
+	color: #666; border: 1px solid #E5E5E5; background-color: #fff;
+}
+.o-btn2 {
+	color: #fff;
+}
+%btn34 {display: block; text-align: center; border-radius: 5px; color: #fff; line-height: 42px; }
+.o-btn3 {
+	@extend %btn34; background-color: #FF5001; /* 橙色1 */
+}
+.o-btn3_1 {
+	@extend %btn34; background-color: #FF6801; /* 橙色2 */
+}
+.o-btn4 {
+	@extend %btn34; background-color: #02BF01;
+}
+.o-btn5 {
+	line-height: 30px; color: #333; border: 1px solid #ccc; background-color: #fff;
+	&.o-btn5-dis {color: #ddd; }
+}
+.o-btn6 {
+	line-height: 40px; font-size: 11px; color: #fff; padding: 0 10px; background-color: #E3393C;
+	&.o-btn5-dis {color: #ddd; }
+}
+.o-btn7 {
+	line-height: 33px; color: #333; font-size: 15px; border: 1px solid #ccc; background-color: #eee;
+}
+
+.ft-filter {
+	@extend %fix-bottom; z-index: 99; 
+	border-top: 1px solid #E5E5E5; @include vgradient(#F3F3F3,#fff,#E7E7E7);
+	ul {overflow: hidden; }
+	li {
+		float: left; width: 25%; height: 34px; font-size: 12px; text-align: center; padding: 8px 0;
+		.icon {display: block; margin: 0 auto; }
+		.icon3 {margin: 1px auto; }
+		.icon4 {margin: 1px auto 0; }
+		.icon5 {margin: 2px auto; }
+		.icon32 {margin: 0px auto 1px; }
+	}
+	.cur {
+		color: #f60;
+		.icon3 {background-position: -52px 0; }
+		.icon4 {background-position: -75px 0; }
+		.icon5 {background-position: -95px 0; }
+		.icon6 {background-position: -113px 0; }
+		.icon29 {background-position: -133px -81px; }
+		.icon32 {background-position: -209px -81px; }
+	}
+}
+.fix-ft-space {height: 51px; }
+
+.kf-online {
+	position: fixed; right: 0; z-index: 3; width: 18px; height: 90px; color: #fff; line-height: 1.25; text-align: center; padding: 5px; border-radius: 5px 0 0 5px; @include vgradient(#4088CC,#5695D2,#2A7CC7); @extend %vmiddle;
+	&:before {content: ""; display: inline-block; width: 18px; height: 17px; background-position: -33px 0; @extend %sprite; }
+}
+
+.sl-list {
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 100; background-color: #eee; @include animation(popup .6s ease);
+	h3 {
+		position: relative; line-height: 38px; text-align: center; background-color: #F5F5F5;
+		a {position: absolute; right: 0; top: 0; bottom: 0; padding: 0 15px; color: #3491CA; }
+	}
+	ul {border-top: 1px solid #ddd; }
+	li {
+		line-height: 40px; text-indent: 15px; border-bottom: 1px solid #ddd; background-color: #fff; 
+		li {padding-left: 15px; background-color: #F3F3F3; }
+		li:last-child {border-bottom: 0; }
+	}
+}
+
+@-webkit-keyframes popup {
+	0% {@include translateY(100%); }
+	100% {@include translateY(0); }
+}
+@keyframes popup {
+	0% {@include translateY(100%); }
+	100% {@include translateY(0); }
+}
+
+
+
+
+
