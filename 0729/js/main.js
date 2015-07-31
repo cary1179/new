@@ -58,6 +58,6 @@ $(function() {
 		next: $("#next"),
 		prev: $("#prev"),
 		data: "经典,修身,宽松"
-	})
+	});
 	
 });

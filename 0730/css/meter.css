@@ -23,8 +23,12 @@ body { min-width: 320px; background: #F4F4F4; overflow-x: hidden; -webkit-text-s
 .mb30 {margin-bottom: 30px !important; }
 .tc {text-align: center; }
 .tr {text-align: right; }
+.fz10 {font-size: 10px; }
+.fz12 {font-size: 12px; }
+.fz16 {font-size: 16px; }
 .fz18 {font-size: 18px; }
 .fred {color: #FE5955; }
+.f666 {color: #666; }
 .f999 {color: #999; }
 .bgfff {background-color: #fff !important; }
 .clear { clear: both; }
@@ -50,6 +54,8 @@ input[type="radio"]:checked+.imt1 {background-position: -152px 0px; }
 .imt2 {width: 14px; height: 8px; background-position: 0 0; }
 .imt3 {width: 14px; height: 8px; background-position: 0 -8px; }
 .imt4 {width: 13px; height: 14px; background-position: -139px -1px; }
+.imt5 {width: 17px; height: 17px; background-position: -104px -1px; }
+.imt6 {width: 17px; height: 17px; background-position: -122px -1px; }
 
 /* = step = */
 .step-bar {position: relative; line-height: 20px; color: #fff; padding: 12px 10px; }
@@ -79,12 +85,31 @@ input[type="radio"]:checked+.imt1 {background-position: -152px 0px; }
 .table-info p {color: #999; font-size: 12px; margin: 0 45px; }
 
 /* = 敬告 = */
-.announce {margin: -9px 0 3px; padding: 15px 0; background-color: #fff; }
+.announce {font-size: 12px; color: #999; margin: -9px 0 3px; padding: 15px 12px; background-color: #fff; }
 .announce .imt4 {vertical-align: -2px; margin-right: 8px; }
 
 /* = 列表型文字 = */
 .list-content {padding-left: 2em; }
 .list-content em {float: left; margin-left: -2em; }
+
+/* = 赞 = */
+.zan {padding: 15px; }
+.zan .imt {vertical-align: middle; margin-right: 8px; }
+
+/* = 保存 = */
+.save {}
+.save .btn1 {display: block; }
+.share {line-height: 46px; }
+.share:active {background-color: #dedede; }
+
+/* = 评论 = */
+.comment {}
+.comment h3 {padding: 8px 10px; background-color: #fff; }
+.comment textarea {display: block; width: 86%; height: 4em; color: #999; font-size: 12px; margin: 5% 5% 3%; padding: 2%; border: 1px solid #c6c6c6; resize: none; background-color: #F4F4F4; }
+.comment .btn1 {width: 72px; line-height: 20px; font-size: 10px; margin-bottom: 3%; margin-right: 5%; }
+.comment ul {margin: 0 10px; border-top: 1px solid #fff; }
+.comment li {padding: 10px 0; border-bottom: 1px solid #fff; }
+.comment li p {line-height: 20px; color: #999; font-size: 12px; }
 
 /* = 模拟select = */
 .select {position: relative; z-index: 1; display: inline-block; }
@@ -114,8 +139,10 @@ input[type="radio"]:checked+.imt1 {background-position: -152px 0px; }
 .change .cg_prev:after {border-right: 8px solid #ccc; right: 5px; }
 .change input {width: 30px; font-size: 12px; background-color: #F1F3F6; }
 
-
-
+/* = 按钮 = */
+.btn {display: inline-block; text-align: center; }
+.btn:hover {text-decoration: none; }
+.btn1 {color: #fff; font-size: 16px; line-height: 36px; background-color: #55BCFF; }
 
 
 

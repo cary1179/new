@@ -73,11 +73,12 @@ input[type="text"]{border-radius:0;}
 .meter1:before {border-top-color: #fff; }
 .meter1 .count i {color: #CBD5DF; }
 .meter1 .count i, .meter1 .count input {background-color: #F1F3F6; }
-.meter1 table td {background-color: #fff; }
+.meter1 table td {border-color: #EFF5FB; background-color: #fff; }
 .meter1 .pd-intent {padding-left: 60px; }
 .meter2 {background-color: #fff; }
 .meter2:before {border-top-color: #EFF5FB; }
 .meter2 .count i {color: #D7D7D7; }
+.meter2 table td {border-color: #fff; }
 .table_content1 {color: #666; font-size: 14px; font-family: "simsun"; padding: 0 70px; }
 .table_content1 b {display: inline-block; font-size: 18px; color: #333; font-weight: 400; font-family: "Microsoft Yahei", arial; margin-bottom: 25px; }
 .table_content1 .num {float: left; margin-left: -30px; }
@@ -91,10 +92,11 @@ input[type="text"]{border-radius:0;}
 .table table {width: 100%; font-size: 18px; text-align: center; table-layout: fixed; }
 .table th {height: 48px; font-size: 20px; font-weight: 400; color: #fff; background-color: #98A6F7; }
 .table .td1, .table .td2 {width: 26%; }
-.table td {position: relative; padding: 20px 0; border: 3px solid transparent; background-color: #EFF5FB; }
-.table td em {position: absolute; right: 25px; bottom: 20px; color: #999; font-style: normal; }
+.table td {padding: 20px 0; border: 3px solid; background-color: #EFF5FB; }
+.table td em {float: right; color: #999; font-style: normal; margin: 10px 10px 0 0; }
 .table td .img_tit {display: block; font-size: 22px; margin-bottom: 25px; }
 .table img {width: 450px; }
+.table .count {display: block; margin: 0 auto; }
 
 /* = 弹层 = */
 .mask {display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 999; background-color: rgba(0,0,0,.5); }
@@ -113,7 +115,7 @@ input[type="text"]{border-radius:0;}
 .pop2 .middle_ipt {width: 206px; height: 32px; font-size: 20px; padding: 6px 10px; border: 1px solid #E0E1E2; }
 
 /* = 模拟select = */
-.select {position: relative; display: inline-block; height: 40px; line-height: 40px; padding: 0 35px 0 15px; border: 1px solid #c1c1c1; background-color: #fff; }
+.select {position: relative; z-index: 1; display: inline-block; height: 40px; line-height: 40px; padding: 0 35px 0 15px; border: 1px solid #c1c1c1; background-color: #fff; }
 .select:after {content: ""; position: absolute; right: 8px; top: 16px; width: 0; height: 0; border: 10px solid transparent; border-top: 10px solid #D5DADF; cursor: pointer; }
 .select ul {display: none; border: 1px solid #ddd; border-bottom: 0; }
 .select li {padding-left: 15px; border-bottom: 1px solid #ddd; }
